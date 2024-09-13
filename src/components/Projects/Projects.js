@@ -8,8 +8,10 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
-
+import monitor from "../../Assets/Projects/O2.png"
+import data from "../../Assets/Projects/Data.png"
 function Projects() {
+
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -79,10 +81,20 @@ function Projects() {
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={data}
+              isBlog={false}
+              title="Data Extraction and analysis"
+              description="This project  ainms to extract data and analysis it using various python libaries . It extract data from the url and give the outout as the word cound and other such 9 variables."
+              ghLink="https://github.com/mehta-karannn/Data-Extraction-and-Analysing"
+              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+            />
+          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={monitor}
               isBlog={false}
               title="Monitoring System for Heart Rate and Oxygen"
               description="This system helps one carry their personalized Oxymeter with them . Using this they can detect there actual body temperature as well as Hear Rate . It is done through the Heat Map of the person's face and accordingly it detects the person's Heart Rate and Oxygen."
